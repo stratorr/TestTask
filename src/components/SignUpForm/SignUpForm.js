@@ -25,12 +25,12 @@ const SignUpForm = () => {
     name: Yup.string("Enter your name")
       .min(2, "Введите минимум 2 символа")
       .max(60, "Допустимо максимум 60 символов")
-      .required("name is required"),
+      .required("Name is required"),
     email: Yup.string("Enter your email")
       .matches(emailRegEx, "Неверный формат")
       .required("Email is required"),
     phone: Yup.string("Enter your phone number")
-      .required("number is required")
+      .required("Number is required")
       .matches("[^[+]{0,1}380([0-9]{9})$]", "Неверный формат"),
     position_id: Yup.string().required(),
   });
