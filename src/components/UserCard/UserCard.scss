@@ -1,0 +1,28 @@
+.userCard {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 282px;
+  &__content {
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .content__img,
+    .content__name {
+      margin-bottom: 20px;
+    }
+
+    .content__img {
+      border-radius: 80px;
+    }
+
+    .content__mail,
+    .content__name {
+      cursor: pointer;
+    }
+  }
+}

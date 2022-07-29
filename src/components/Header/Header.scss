@@ -1,0 +1,25 @@
+@import "../../styles/mixins.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 32px;
+  &__logo {
+    width: 104px;
+    height: 26px;
+    cursor: pointer;
+  }
+  &__btns {
+    display: flex;
+    .btn + .btn {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    padding: 13px 16px;
+  }
+}
