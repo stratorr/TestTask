@@ -31,7 +31,7 @@ const SignUpForm = () => {
       .required("Email is required"),
     phone: Yup.string("Enter your phone number")
       .required("Number is required")
-      .matches("[^[+]{0,1}380([0-9]{9})$]", "Неверный формат"),
+      .matches("[/^+380d{3}d{2}d{2}d{2}$/]", "Неверный формат"),
     position_id: Yup.string().required(),
   });
 
